@@ -28,8 +28,8 @@ Félix no es admitido en fútbol
 
 import Cl_Deportista from "./Cl_Deportista.js";
 
-let deportista1 = new Cl_Deportista ("Juan", 132, 8, 1, 21);
-let deportista2 = new Cl_Deportista();
+let deportista1 = new Cl_Deportista ("Juan", 132, 8, 21, 1);
+let deportista2 = new Cl_Deportista("Félix", 110, 10, 20,2);
 
 let salida=document.getElementById("salida");
 salida.innerHTML= `
@@ -40,8 +40,6 @@ salida.innerHTML= `
 <br>Edad: ${deportista1.edad}
 <br>Notas promedio: ${deportista1.promedio()}
 <br>${deportista1.nombre} ${deportista1.admitido()}
-
-}
 <br><br>
  Nombre del estudiante: ${deportista2.nombre} 
 <br> Acumulado de notas: ${deportista2.acumulado} 
