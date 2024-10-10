@@ -1,4 +1,4 @@
-import Cl_Estudiante from "./Cl_Estudiante";
+import Cl_Estudiante from "./Cl_Estudiante.js";
 export default class Cl_Deportista extends Cl_Estudiante {
 constructor (nombre, acumulado ,materias, edad, deporte){
     super(nombre, acumulado ,materias, edad)

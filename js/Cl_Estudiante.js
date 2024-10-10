@@ -3,7 +3,7 @@ export default class Cl_Estudiante{
     this.nombre = nombre;
     this.acumulado= acumulado;
     this.materias= materias;
-    thi8s.edad=edad;
+    this.edad=edad;
     }
     
     set nombre(n){
