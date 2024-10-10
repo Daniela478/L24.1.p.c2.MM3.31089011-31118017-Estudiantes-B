@@ -1,18 +1,25 @@
-import Cl_Estudiante from "./CL_Estudiante.js";
+import Cl_Estudiante from "./Cl_Estudiante";
 export default class Cl_Deportista extends Cl_Estudiante {
-constructor (nombre, acumulado ,materias){
-    super(nombre, acumulado ,materias)
+constructor (nombre, acumulado ,materias, edad, deporte){
+    super(nombre, acumulado ,materias, edad)
+this.deporte=deporte;
 }
-    admitidoB(){ ///1)Beisbol, 2) Fútbol
-    if (this.deporte ==1){ 
+
+set deporte (d){
+    this._deporte =d;
+}
+get deporte(){
+    return this.deporte;
+}
+
+    admitido(){ ///1)Beisbol, 2) Fútbol
+    if (this.deporte ==1) 
         if(this.promedio() > 14 && this.edad >= 21)
      return "es admitido en Beisbol";
-    else 
+         else 
         return "No es admitido en Beisbol";
-    }
-}
-admitidoF(){
-if (this.deporte ==2)
+    
+        else if (this.deporte ==2)
     if(this.promedio() >= 12 && this.edad >= 19)
         return "es admitio en fútbol";
     else 
