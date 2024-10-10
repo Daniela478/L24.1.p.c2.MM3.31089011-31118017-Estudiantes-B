@@ -3,11 +3,11 @@ export default class Cl_Deportista extends Cl_Estudiante {
 constructor (nombre, acumulado ,materias){
     super(nombre, acumulado ,materias)
 }
-    recibe(){
+    admitido(){
     if(this.promedio() >= 15)
-     return "Le corresponde una beca de: " +30 + "$";
+     return ";
     else if(this.promedio() >=10) 
-        return "Le corresponde una beca de: " + 20 + "$";
+        return ";
     else 
         return "No le corresponde beca";
     }
