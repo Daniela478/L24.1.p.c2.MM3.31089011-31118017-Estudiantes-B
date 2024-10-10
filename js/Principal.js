@@ -26,9 +26,9 @@ Nota promedio: 11.00
 Félix no es admitido en fútbol
 */
 
-import Cl_Deportista from "./Cl_Deportista";
+import Cl_Deportista from "./Cl_Deportista.js";
 
-let deportista1 = new Cl_Deportista ();
+let deportista1 = new Cl_Deportista ("Juan", 132, 8, 1, 21);
 let deportista2 = new Cl_Deportista();
 
 let salida=document.getElementById("salida");
@@ -43,5 +43,10 @@ salida.innerHTML= `
 
 }
 <br><br>
- 
-
+ Nombre del estudiante: ${deportista2.nombre} 
+<br> Acumulado de notas: ${deportista2.acumulado} 
+<br> Cantidad de materias:${deportista2.materias}
+<br>Deporte (1 = Beisbol, 2 = Fútbol): ${deportista2.deporte}
+<br>Edad: ${deportista2.edad}
+<br>Notas promedio: ${deportista2.promedio()}
+<br>${deportista2.nombre} ${deportista2.admitido()}`;

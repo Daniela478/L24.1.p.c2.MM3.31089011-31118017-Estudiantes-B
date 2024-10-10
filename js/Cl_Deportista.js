@@ -9,7 +9,7 @@ set deporte (d){
     this._deporte =d;
 }
 get deporte(){
-    return this.deporte;
+    return this._deporte;
 }
 
     admitido(){ ///1)Beisbol, 2) Fútbol
